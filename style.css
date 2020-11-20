@@ -86,10 +86,15 @@ header.sticky{
 }
 
 
+header.sticky ul li a{
+	color: #000;
+	transition: .6s;
+}
+
+
 header ul{
 	position: relative;
 	display: flex;
-
 }
 
 header ul li{
@@ -98,8 +103,11 @@ header ul li{
 
 header ul li a{
 	position: relative;
-	margin: 0 15px;
+	margin: 0 10px;
 	transition: .6s;
+	color: #fff;
+	letter-spacing: 2px;
+	font-size: .9em;
 }
 
 
@@ -107,8 +115,57 @@ header ul li a{
 	position: relative;
 	width: 100%;
 	height: 100vh;	
-	background-image: url(img/wallpaper-2.jpg);	
+	background-image: url(img/wallpaper-3.png);	
 	background-size: cover;
+	background-position: fixed;
+}
+
+.tempBorder{
+	position: relative;
+	padding-top: 10em;
+}
+
+
+.myName{
+	margin-left: 80px;
+}
+
+.myName h4{
+	display: flex;
+	color: #102d79;
+	margin-left: 40px;
+	letter-spacing: 2px;
+	font-family: 'Lato';
+	text-align: center;
+	position: relative;
+	font-weight: bold;
+	font-family: 'Lato';
+}
+
+h4::before{
+	position: absolute;
+    width: 40px;
+    left: 40px;
+    content: "";
+    display: block;
+    height: 1.2px;
+    background: #102d79;
+    top: 14px;
+    left: -50px;
+    text-align: left;
+}
+
+
+.role{
+	line-height: 70px;
+	margin-left: 72px;
+}
+
+.role h1{
+	font-size: 80px;	
+	font-family: 'Playfair Display', serif;
+	color: #383838;
+	margin: 30px 0 30px 0;
 }
 
 
@@ -165,5 +222,30 @@ div h3 {
 		padding: 5px;
 		font-size: 12px;
 	}
+
+	.role {
+		margin-left: 45px;
+		line-height: 55px;
+	}
+
+	.role h1 {
+		font-size: 30px;
+		margin: 0px;
+		color: #202020;
+	}
+
+
+.myName h4{
+	font-size: 14px;
+	margin-left: 5px;
+}
+
+h4::before{
+	width: 20px;
+    height: 1.2px;
+    top: 7px;
+    left: -35px;
+}
+
 
 }
