@@ -225,18 +225,19 @@ div h3 {
 
 
 #preview-shadow{
-	background-color: #e6eeff;
+	border: 1.5px solid #17a2b8;
+	background-color: #b3ccff;
 	width: 300px;
 	height: 180px;
 	padding-left: 30px;
 	padding-top: 30px;
+	position: relative;
 }
 
 #preview{
 	width: 300px;
 	border: 1.5px solid #17a2b8;
-	background-color: #e6f2ff;/*
-	background-color: var(--previewBG);*/
+	background-color: #e6f2ff;
 	padding: 15px;
 	position: relative;
 }
