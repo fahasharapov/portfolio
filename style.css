@@ -112,6 +112,10 @@ header ul li a{
 }
 
 
+div h3 {
+	position: relative;
+}
+
 .main-container {
 	width: 1200px;
 	margin: 0 auto;
@@ -154,7 +158,7 @@ header ul li a{
 	}
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 460px) {
 
 	header ul li {
 		margin: 2px;
