@@ -140,7 +140,6 @@ header ul li a{
 	text-align: center;
 	position: relative;
 	font-weight: bold;
-	font-family: 'Lato';
 }
 
 h4::before{
@@ -219,27 +218,48 @@ div h3 {
 	display: grid;
 	align-content: center;
 	justify-content: center;
-	padding-top: 50px;
+	padding-top: 30px;
 	padding-bottom: 50px;
 }
 
 
+
+
 #preview-shadow{
 	border: 1.5px solid #17a2b8;
-	background-color: #b3ccff;
-	width: 300px;
-	height: 180px;
-	padding-left: 30px;
-	padding-top: 30px;
+	/*background-color: #b3ccff;*/
+	width: 400px;
+	height: 220px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
 	position: relative;
 }
 
+
+#preview-shadow h3,
+#preview-shadow p{
+	font-family: 'Roboto Mono', monospace; 
+}
+
+#preview-shadow:hover .preview-2{
+	opacity: 0;
+	transition: .5s;
+}
+
 #preview{
-	width: 300px;
+	width: 400px;
+	height: 200px;
 	border: 1.5px solid #17a2b8;
-	background-color: #e6f2ff;
+	/*background-color: #e6f2ff;*/
+	background-color: #fff;
 	padding: 15px;
-	position: relative;
+}
+
+.preview-2{
+	position: absolute;
+	top: 70px;
+	transition: .5s;
 }
 
 .corner{
