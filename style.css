@@ -360,5 +360,11 @@ h4::before{
     left: -35px;
 }
 
+#preview-shadow,
+#preview{
+	width: 300px;
+	height: 180px;
+}
+
 
 }
