@@ -222,8 +222,22 @@ div h3 {
 	padding-bottom: 50px;
 }
 
+.about-block{
+	display: flex;
+	padding-left: 0px;
+}
 
+.about-icon{
+	width: 50px;
+	height: 50px;
+	margin-bottom: 20px;
+}
 
+.about-label{
+	text-transform: uppercase;
+	font-size: 40px;
+	margin-left: 10px;
+}
 
 #preview-shadow{
 	border: 1.5px solid #17a2b8;
@@ -234,6 +248,8 @@ div h3 {
 	padding-right: 20px;
 	padding-top: 10px;
 	position: relative;
+
+	background-color: #fff0e6;
 }
 
 
@@ -244,22 +260,22 @@ div h3 {
 
 #preview-shadow:hover .preview-2{
 	opacity: 0;
-	transition: .5s;
+	transition: .7s;
 }
 
 #preview{
 	width: 400px;
 	height: 200px;
 	border: 1.5px solid #17a2b8;
-	/*background-color: #e6f2ff;*/
 	background-color: #fff;
 	padding: 15px;
+	opacity: .9;
 }
 
 .preview-2{
 	position: absolute;
 	top: 70px;
-	transition: .5s;
+	transition: 1s;
 }
 
 .corner{
