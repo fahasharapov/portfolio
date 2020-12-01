@@ -366,6 +366,13 @@ div h3 {
 
 /*MOBILE VERSION*/
 
+@media screen and (max-device-width: 1366px){
+	.banner{
+		background-attachment: scroll;
+	}
+}
+
+
 @media screen and (max-width: 1200px){
 	.main-container {
 		width: 95%;
