@@ -24,7 +24,7 @@
 			<ul>
 				<li><a href="#about">ABOUT</li></a>
 				<li><a href="#skills">SKILLS</li></a>
-				<li><a href="#">PROJECTS</li></a>
+				<li><a href="#projects">PROJECTS</li></a>
 				<li><a href="#">CONTACT</li></a>
 			</ul>
 		</nav>	
@@ -76,7 +76,7 @@
 </section>
 
 <section class="s2">
-	<div class="main-container">
+	<div class="main-container skills-container">
 		<div id="skills">
 			<ul class="skills-block">
 				<li><ion-icon name="build-outline" class="skills-icon"></ion-icon></li>
@@ -114,6 +114,54 @@
 	</div>
 </section>
 
+
+<section class="s1">
+	<div class="main-container project-container">
+		<div id="projects">
+			<ul class="projects-block">
+				<li><ion-icon name="folder-outline" class="portfolio-icon"></ion-icon></li>
+				<li><div class="about-label">Projects</div></li>
+			</ul>
+		</div>
+
+
+		<div class="cta filter">
+			<ul class="project-category">
+				<li><a class="all active" data-filter="all" href="#" role="button">ALL</a></li>
+				<li><a class="design" data-filter="design" href="#" role="button">DESIGN</a></li>
+				<li><a class="personal" data-filter="personal" href="#" role="button">PERSONAL</a></li>
+				<li><a class="misc" data-filter="misc" href="#" role="button">MISC</a></li>
+			</ul>
+		</div>
+			
+	</div>
+
+
+
+<section class="s1">
+	<div class="main-container project-container">
+		<div class="boxes">
+		  <a class="design" data-category="design" href="#">
+		  	<div class="post-wrapper">
+			  	<div class="post">
+			  		<img class="thumbnail" src="img/post-1.jpg" alt="">
+				</div>
+		  	</div>
+		  </a>
+		  <a class="personal" data-category="personal" href="#">
+		  	<div class="post">
+		  		<img class="thumbnail" src="img/post-2.jpg" alt="">
+		  	</div>
+		  </a>
+		  <a class="misc" data-category="misc" href="#">Project 3</a>
+		</div>
+	</div>
+
+
+</section>
+
+
+
 </body>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous"></script>
@@ -126,6 +174,46 @@
 	})
 </script>
 
+
+
+
+<!-- Script For Filtering Projects -->
+<script>
+	(function($) {
+
+  'use strict';
+
+  var $filters = $('.filter [data-filter]'),
+    $boxes = $('.boxes [data-category]');
+
+  $filters.on('click', function(e) {
+    e.preventDefault();
+    var $this = $(this);
+    
+    $filters.removeClass('active');
+    $this.addClass('active');
+
+    var $filterColor = $this.attr('data-filter');
+
+    if ($filterColor == 'all') {
+      $boxes.removeClass('is-animated')
+        .fadeOut().finish().promise().done(function() {
+          $boxes.each(function(i) {
+            $(this).addClass('is-animated').delay((i++) * 200).fadeIn();
+          });
+        });
+    } else {
+      $boxes.removeClass('is-animated')
+        .fadeOut().finish().promise().done(function() {
+          $boxes.filter('[data-category = "' + $filterColor + '"]').each(function(i) {
+            $(this).addClass('is-animated').delay((i++) * 200).fadeIn();
+          });
+        });
+    }
+  });
+
+})(jQuery);
+</script>
 
 
 
