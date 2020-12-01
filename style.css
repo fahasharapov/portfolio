@@ -403,7 +403,6 @@ ul.frame-list{
 .logo-react,
 .logo-sqlite,
 .logo-sql{
-	/*color: blue;*/
 	height: 30px;
 	width: 30px;
 }
@@ -446,13 +445,8 @@ h6{
 }
 
 
-
-
 .project-category li{
 	display: inline-block;
-/*	margin-left: 10px;
-	padding-left: 10px;
-	padding-right: 10px;*/
 	transition: .5s;
 }
 
@@ -461,17 +455,8 @@ h6{
 }
 
 
-/*.project-category li a:hover{
-	border: 1px solid black;
-	color: #fff;
-	background-color: #000;
-	transition: .5s;
-}
-*/
 
-
-/*TEMP SCRIPT*/
-
+/*FILTERING PROJECTS*/
 
 .filter {
   margin: 30px 0 10px;
@@ -486,21 +471,21 @@ h6{
   margin-bottom: 20px;
   width: 100px;
   text-align: center;
+  transition: .4s;
 }
 
 .filter a:hover{
 	background-color: #000;
 	color: #fff;
+	transition: .4s;
 }
 
 .boxes {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .boxes a {
   width: 23%;
-  /*border: 1px solid #c4c4c4;*/
   margin: 0 1% 20px 1%;
   line-height: 60px;
 }
@@ -529,7 +514,7 @@ h6{
   height: 0;
   border-style: solid;
   border-width: 15px 15px 0 0;
-  border-color: blue transparent transparent transparent;
+  border-color: #000 transparent transparent transparent;
   transition: .7s;
 }
 
@@ -561,6 +546,15 @@ h6{
 }
 
 
+.post-wrapper{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 320px);
+	grid-gap: 20px;
+	justify-content: center;
+	padding-bottom: 50px;
+}
+
+
 .post{
 	border: 1px solid var(--border-color);
 	transition: .5s;
@@ -580,29 +574,6 @@ h6{
 }
 
 
-.post-preview{
-	background-color: #fff;
-	padding: 15px;
-}
-
-.post-title{
-	margin: 0;
-	color: black;
-}
-
-.post-intro{
-	color: #4b5156;
-	font-size: 14px;
-}
-
-#post-link {
-	font-size: 14px;
-}
-
-
-
-
-/*END OF TEMP SCRIPT*/
 
 
 /*MOBILE VERSION*/
