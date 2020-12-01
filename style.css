@@ -25,7 +25,7 @@ html, body {
 }
 
 
-h1, h2, h3, h4, h5, h6, strong {
+h1, h2, h3, h4, h5, h6 strong {
 	color: var(--mainText);
 	font-family: 'Russo One', sans-serif;
 	font-weight: 500;
@@ -236,7 +236,8 @@ div h3 {
 	padding-bottom: 50px;
 }
 
-.about-block{
+.about-block,
+.skills-block{
 	display: flex;
 	padding-left: 0px;
 }
@@ -256,7 +257,6 @@ div h3 {
 
 #preview-shadow{
 	border: 1.5px solid #17a2b8;
-	/*background-color: #b3ccff;*/
 	width: 400px;
 	height: 220px;
 	padding-left: 20px;
@@ -363,6 +363,64 @@ div h3 {
 }
 
 
+.lang,
+.frame,
+.db{
+	border: 1px solid #000;
+	width: 50%;
+	padding: 1.5px;
+	font-size: 18px;
+	text-align: center;
+	background-color: #000;
+	color: #fff;
+	margin-bottom: 45px;
+}
+
+
+ul.lang-list{
+	padding-left: 0px;
+
+}
+
+.skill-lang-list{
+	display: flex;
+	align-content: center;
+}
+
+.logo-html5,
+.logo-css3,
+.logo-js,
+.cpp{
+	/*color: blue;*/
+	height: 30px;
+	width: 30px;
+}
+
+li h6 {
+	font-size: 22px;
+}
+
+h6{
+	color: #102d79;
+	margin-left: 50px;
+	letter-spacing: 2px;
+}
+
+
+.col-sm-4:before {
+    background-color: black;
+    content: '';
+    margin-left: -7px;
+    margin-right: 7px;
+    position: absolute;
+    top: 0;
+    left: -.5em;
+    width: 1.2px;
+    height: 100%;
+}
+
+
+
 
 /*MOBILE VERSION*/
 
@@ -442,7 +500,8 @@ h4::before{
 }
 
 
-.about-block{
+.about-block,
+.skills-block{
 	justify-content: center;
 }
 
