@@ -237,7 +237,8 @@ div h3 {
 }
 
 .about-block,
-.skills-block{
+.skills-block,
+.projects-block{
 	display: flex;
 	padding-left: 0px;
 }
@@ -432,6 +433,19 @@ h6{
 
 
 
+/*PROJECTS SECTION*/
+
+
+.projects-container{
+	height: 80vh;
+}
+
+
+#projects{
+	padding-top: 60px;
+}
+
+
 
 /*MOBILE VERSION*/
 
@@ -512,7 +526,8 @@ h4::before{
 
 
 .about-block,
-.skills-block{
+.skills-block,
+.projects-block{
 	justify-content: center;
 }
 
