@@ -8,6 +8,10 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Playfair+Display&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<script src="script.js"></script>
 	<script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 
@@ -41,16 +45,17 @@
 
 <section class="s1" id="about">
 	<div class="main-container">
+		<div>					
+			<ul class="about-block">
+				<li><ion-icon name="accessibility-outline" class="about-icon"></ion-icon></li>
+				<li><div class="about-label">About</div></li>
+			</ul>
+		</div>
 		<div class="wrapper">
 			<div class="left-column" data-aos="fade-left">
 				<img id="profile-pic" src="img/profile-pic.jpg" alt="profile picture">
 			</div>
 			<div class="right-column" data-aos="fade-right">
-				<div class="col-wrapper">
-					<ul class="about-block">
-						<li><ion-icon name="accessibility-outline" class="about-icon"></ion-icon></li>
-						<li><div class="about-label">About</div></li>
-					</ul>
 					<div id="preview-shadow">
 						<div id="corner-tl" class="corner"></div>
 						<div id="corner-tr" class="corner"></div>
@@ -60,16 +65,11 @@
 						<div id="corner-br" class="corner"></div>
 							<div class="preview-2">
 								<div id="preview">
-<!-- 									<div id="corner-tl" class="corner"></div>
-									<div id="corner-tr" class="corner"></div> -->
 									<h3>What I Do</h3>
-									<p>I build dynamic and responsive websites, design and develop user interfaces. </p><!-- 
-									<div id="corner-bl" class="corner"></div>
-									<div id="corner-br" class="corner"></div> -->
+									<p>I build dynamic and responsive websites, design and develop user interfaces. </p>
 								</div>
 							</div>
 					</div>
-				</div>
 			</div>
 		</div>	
 	</div>
@@ -77,8 +77,30 @@
 
 <section class="s2">
 	<div class="main-container">
-		<div class="main-container">
-			Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Neque similique sunt dolorem libero quis? Repellendus, consectetur, corrupti. Tempora culpa quas, consectetur repellendus odio, aperiam laudantium ipsum sapiente corporis, dolor, aspernatur.
+		<div id="skills">
+			<ul class="about-block">
+				<li><ion-icon name="build-outline" class="skills-icon"></ion-icon></li>
+				<li><div class="about-label">Skills</div></li>
+			</ul>
+		</div>
+		<div class="container">
+		  <div class="row">
+		    <div class="col-sm-4">
+		      <h3>Column 1</h3>
+		      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+		      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+		    </div>
+		    <div class="col-sm-4">
+		      <h3>Column 2</h3>
+		      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+		      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+		    </div>
+		    <div class="col-sm-4">
+		      <h3>Column 3</h3>        
+		      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+		      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+		    </div>
+		  </div>
 		</div>
 	</div>
 </section>

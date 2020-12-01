@@ -48,6 +48,13 @@ ul {
 	list-style: none;
 }
 
+ul li a:hover{
+	list-style: none;
+	text-decoration: none;
+	color: #ffa64d;
+	transition: 0s;
+}
+
 
 h1 {font-size: 56px;}
 h2 {font-size: 36px;}
@@ -119,6 +126,8 @@ header ul li a{
 	background-image: url(img/wallpaper-3.png);	
 	background-size: cover;
 	background-position: fixed;
+	/*height: 800px;*/
+	background-attachment: fixed;
 }
 
 .tempBorder{
@@ -179,6 +188,7 @@ div h3 {
 }
 
 
+/*ABOUT ME SECTION*/
 
 .s1{
 	background-color: var(--secondaryColor);
@@ -188,6 +198,10 @@ div h3 {
 
 #about{
 	padding: 100px 0px;
+}
+
+#skills{
+	padding: 80px 0px;
 }
 
 .wrapper{
@@ -227,7 +241,8 @@ div h3 {
 	padding-left: 0px;
 }
 
-.about-icon{
+.about-icon,
+.skills-icon{
 	width: 50px;
 	height: 50px;
 	margin-bottom: 20px;
@@ -309,7 +324,7 @@ div h3 {
 
 
 
-
+/*SKILLS SECTION*/
 
 .s2{
 	background-color: var(--mainColor);
@@ -317,6 +332,39 @@ div h3 {
 	overflow: auto;
 }
 
+
+.wrapper-s2{
+	border: 1px solid black;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas: 's2-top-column';
+}
+
+.s2-top-column{
+	grid-area: s2-top-column;
+	padding-top: 100px;
+	padding-bottom: 50px;
+	display: flex;
+}
+
+.skills-content{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-area: 's2-left-col s2-middle-col s2-right-col';
+}
+
+.s2-middle-col{
+	grid-area: s2-middle-col;
+	border: 1px solid black;
+}
+
+.skills li{
+	border: 1px solid black;
+}
+
+
+
+/*MOBILE VERSION*/
 
 @media screen and (max-width: 1200px){
 	.main-container {
