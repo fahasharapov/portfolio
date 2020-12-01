@@ -124,15 +124,40 @@
 			</ul>
 		</div>
 
-		<ul class="">
-			<li>ALL</li>
-			<li>PERSONAL</li>
-			<li>GAMES</li>
-			<li>MISC</li>
-		</ul>
+
+		<div class="cta filter">
+			<ul class="project-category">
+				<li><a class="all active" data-filter="all" href="#" role="button">ALL</a></li>
+				<li><a class="red" data-filter="red" href="#" role="button">PERSONAL</a></li>
+				<li><a class="green" data-filter="green" href="#" role="button">GAMES</a></li>
+				<li><a class="blue" data-filter="blue" href="#" role="button">MISC</a></li>
+			</ul>
+		</div>
 			
 	</div>
+
+
+<!-- TEMP SCRIPT -->
+
+<section class="s1">
+	<div class="main-container project-container">
+<div class="boxes">
+  <a class="red" data-category="red" href="#">Box1</a>
+  <a class="green" data-category="green" href="#">Box2</a>
+  <a class="blue" data-category="blue" href="#">Box3</a>
+</div>
+
+
+</div>
+<!-- END OF TEMP SCRIPT -->
+
 </section>
+
+
+
+
+
+
 
 
 
@@ -148,6 +173,43 @@
 	})
 </script>
 
+
+<script>
+	(function($) {
+
+  'use strict';
+
+  var $filters = $('.filter [data-filter]'),
+    $boxes = $('.boxes [data-category]');
+
+  $filters.on('click', function(e) {
+    e.preventDefault();
+    var $this = $(this);
+    
+    $filters.removeClass('active');
+    $this.addClass('active');
+
+    var $filterColor = $this.attr('data-filter');
+
+    if ($filterColor == 'all') {
+      $boxes.removeClass('is-animated')
+        .fadeOut().finish().promise().done(function() {
+          $boxes.each(function(i) {
+            $(this).addClass('is-animated').delay((i++) * 200).fadeIn();
+          });
+        });
+    } else {
+      $boxes.removeClass('is-animated')
+        .fadeOut().finish().promise().done(function() {
+          $boxes.filter('[data-category = "' + $filterColor + '"]').each(function(i) {
+            $(this).addClass('is-animated').delay((i++) * 200).fadeIn();
+          });
+        });
+    }
+  });
+
+})(jQuery);
+</script>
 
 
 
