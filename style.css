@@ -377,7 +377,8 @@ div h3 {
 }
 
 
-ul.lang-list{
+ul.lang-list,
+ul.frame-list{
 	padding-left: 0px;
 
 }
@@ -390,7 +391,9 @@ ul.lang-list{
 .logo-html5,
 .logo-css3,
 .logo-js,
-.cpp{
+.logo-cpp,
+.logo-bstrp,
+.logo-react{
 	/*color: blue;*/
 	height: 30px;
 	width: 30px;
