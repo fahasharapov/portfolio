@@ -393,7 +393,9 @@ ul.frame-list{
 .logo-js,
 .logo-cpp,
 .logo-bstrp,
-.logo-react{
+.logo-react,
+.logo-sqlite,
+.logo-sql{
 	/*color: blue;*/
 	height: 30px;
 	width: 30px;
