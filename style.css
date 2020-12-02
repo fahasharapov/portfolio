@@ -575,18 +575,11 @@ h6{
 }
 
 
-
-
 .post{
 	border: 1px solid var(--border-color);
 	transition: .5s;
 }
 
-
-.post:hover{
-	/* transform:scale(1.05);
-	transition: .5s; */
-}
 
 .thumbnail{
 	display: block;
@@ -608,14 +601,15 @@ h6{
 	grid-area: 'left-foot right-foot';
 }
 
-
-/* .right-foot{
-	border: 1px solid black
-}
-
-.foot-wrapper{
-	border-bottom: 1px solid black;
+/* .left-foot{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 } */
+
+.footer-container{
+	display: grid;
+}
 
 
 .foot-wrapper ul {
@@ -626,8 +620,9 @@ h6{
 
 .foot-wrapper ul li{
 	padding: 10px;
-	font-size: 30px;
+	font-size: 28px;
 	font-family: monospace;
+	color: #000;
 }
 
 
