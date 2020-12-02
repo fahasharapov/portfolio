@@ -403,12 +403,21 @@ ul.frame-list{
 .logo-bstrp,
 .logo-react,
 .logo-sqlite,
-.logo-sql,
+.logo-sql{
+	height: 30px;
+	width: 30px;
+}
+
+
 .logo-resume,
 .logo-email,
 .logo-network{
-	height: 30px;
-	width: 30px;
+	height: 40px;
+	width: 40px;
+}
+
+.logo-network{
+	margin-right: 7px;
 }
 
 li h6 {
