@@ -1,170 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
 	<title>Front-End Web Developer</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Playfair+Display&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Playfair+Display&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+		integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+		crossorigin="anonymous" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<script src="script.js"></script>
 	<script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 
 </head>
+
 <body>
-	
-<header>
-	<div class="main-container">
-		<nav>
-			<ul>
-				<li><a href="#about">ABOUT</li></a>
-				<li><a href="#skills">SKILLS</li></a>
-				<li><a href="#projects">PROJECTS</li></a>
-				<li><a href="#">CONTACT</li></a>
-			</ul>
-		</nav>	
-	</div>
-</header>
 
-<div class="banner">
-	<div class="main-container tempBorder">
-		<div class="myName">
-			<h4>Faha Sharapov</h4>
+	<header>
+		<div class="main-container">
+			<nav>
+				<ul>
+					<li><a href="#about">ABOUT</li></a>
+					<li><a href="#skills">SKILLS</li></a>
+					<li><a href="#projects">PROJECTS</li></a>
+					<li><a href="#">CONTACT</li></a>
+				</ul>
+			</nav>
 		</div>
-		<div class="role">
-			<h1>Front-End Web</h1>
-			<h1>Developer</h1>
-		</div>
-	</div>
-</div>
+	</header>
 
-<section class="s1" id="about">
-	<div class="main-container">
-		<div>					
-			<ul class="about-block">
-				<li><ion-icon name="accessibility-outline" class="about-icon"></ion-icon></li>
-				<li><div class="about-label">About</div></li>
-			</ul>
-		</div>
-		<div class="wrapper">
-			<div class="left-column" data-aos="fade-left">
-				<img id="profile-pic" src="img/profile-pic.jpg" alt="profile picture">
+	<div class="banner">
+		<div class="main-container tempBorder">
+			<div class="myName">
+				<h4>Faha Sharapov</h4>
 			</div>
-			<div class="right-column" data-aos="fade-right">
+			<div class="role">
+				<h1>Front-End Web</h1>
+				<h1>Developer</h1>
+			</div>
+		</div>
+	</div>
+
+	<section class="s1" id="about">
+		<div class="main-container">
+			<div>
+				<ul class="about-block">
+					<li>
+						<ion-icon name="accessibility-outline" class="about-icon"></ion-icon>
+					</li>
+					<li>
+						<div class="about-label">About</div>
+					</li>
+				</ul>
+			</div>
+			<div class="wrapper">
+				<div class="left-column" data-aos="fade-left">
+					<img id="profile-pic" src="img/profile-pic.jpg" alt="profile picture">
+				</div>
+				<div class="right-column" data-aos="fade-right">
 					<div id="preview-shadow">
 						<div id="corner-tl" class="corner"></div>
 						<div id="corner-tr" class="corner"></div>
 						<h3 id="who-text">Who Am I</h3>
-						<p>A passionate front-end web developer with a Bachelor of Technology degree and a strong sense for aesthetics and interaction.</p>
+						<p>A passionate front-end web developer with a Bachelor of Technology degree and a strong sense
+							for aesthetics and interaction.</p>
 						<div id="corner-bl" class="corner"></div>
 						<div id="corner-br" class="corner"></div>
-							<div class="preview-2">
-								<div id="preview">
-									<h3>What I Do</h3>
-									<p>I build dynamic and responsive websites, design and develop user interfaces. </p>
-								</div>
+						<div class="preview-2">
+							<div id="preview">
+								<h3>What I Do</h3>
+								<p>I build dynamic and responsive websites, design and develop user interfaces. </p>
 							</div>
+						</div>
 					</div>
-			</div>
-		</div>	
-	</div>
-</section>
-
-<section class="s2">
-	<div class="main-container skills-container">
-		<div id="skills">
-			<ul class="skills-block">
-				<li><ion-icon name="build-outline" class="skills-icon"></ion-icon></li>
-				<li><div class="about-label">Skills</div></li>
-			</ul>
-		</div>
-			<div class="container">
-			  <div class="row">
-			    <div class="col-sm-4" data-aos="fade-up" data-aos-duration="1000">
-			      <p class="lang">Languages</p>
-			      <ul class="lang-list">
-			      	<li class="skill-lang-list"><img src="https://img.icons8.com/color/48/000000/html-5.png" class="logo-html5"/><h6>HTML5</h6></li>
-			      	<li class="skill-lang-list"><img src="https://img.icons8.com/color/48/000000/css3.png" class="logo-css3"><h6>CSS3</h6></li>
-			      	<li class="skill-lang-list"><img src="https://img.icons8.com/color/48/000000/javascript.png" class="logo-js"><h6>JavaScript</h6></li>
-			      	<li class="skill-lang-list"><img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png" class="logo-cpp"/><h6>C++</h6></li>
-			      </ul>
-			    </div>
-			    <div class="col-sm-4" data-aos="fade-up" data-aos-duration="1000">
-			      <p class="frame">Frameworks</p>
-			      	<ul class="frame-list">
-			      	<li class="skill-lang-list"><img src="https://img.icons8.com/officel/16/000000/react.png" class="logo-react"><h6>React</h6></li>
-			      	<li class="skill-lang-list"><img src="https://img.icons8.com/color/48/000000/bootstrap.png" class="logo-bstrp"><h6>Bootstrap4</h6></li>
-			      </ul>
-			    </div>
-			    <div class="col-sm-4" data-aos="fade-up" data-aos-duration="1000">
-			      <p class="db">Databases</p>
-			      <ul class="frame-list">
-			      	<li class="skill-lang-list"><img src="https://img.icons8.com/dusk/64/000000/sql.png" class="logo-sql"><h6>SQL</h6></li>
-			      	<li class="skill-lang-list"><img src="img/sqlite-icon.png" class="logo-sqlite"><h6>SQLite</h6></li>
-			      </ul>       
-			    </div>
-
-			  </div>
-			</div>
-	</div>
-</section>
-
-
-<section class="s1">
-	<div class="main-container project-container">
-		<div id="projects">
-			<ul class="projects-block">
-				<li><ion-icon name="folder-outline" class="portfolio-icon"></ion-icon></li>
-				<li><div class="about-label">Projects</div></li>
-			</ul>
-		</div>
-
-
-		<div class="cta filter">
-			<ul class="project-category">
-				<li><a class="all active" data-filter="all" href="#" role="button">ALL</a></li>
-				<li><a class="design" data-filter="design" href="#" role="button">DESIGN</a></li>
-				<li><a class="personal" data-filter="personal" href="#" role="button">PERSONAL</a></li>
-				<li><a class="misc" data-filter="misc" href="#" role="button">MISC</a></li>
-			</ul>
-		</div>
-			
-	</div>
-
-
-
-<section class="s1">
-	<div class="main-container project-container">
-		<div class="boxes">
-		  <a class="design" data-category="design" href="#">
-		  	<div class="post-wrapper">
-			  	<div class="post">
-			  		<img class="thumbnail" src="img/post-1.jpg" alt="">
 				</div>
-		  	</div>
-		  </a>
-		  <a class="personal" data-category="personal" href="#">
-		  	<div class="post">
-		  		<img class="thumbnail" src="img/post-2.jpg" alt="">
-		  	</div>
-		  </a>
-		  <a class="misc" data-category="misc" href="#">Project 3</a>
+			</div>
 		</div>
-	</div>
+	</section>
+
+	<section class="s2">
+		<div class="main-container skills-container">
+			<div id="skills">
+				<ul class="skills-block">
+					<li>
+						<ion-icon name="build-outline" class="skills-icon"></ion-icon>
+					</li>
+					<li>
+						<div class="about-label">Skills</div>
+					</li>
+				</ul>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4" data-aos="fade-up" data-aos-duration="1000">
+						<p class="lang">Languages</p>
+						<ul class="lang-list">
+							<li class="skill-lang-list"><img src="https://img.icons8.com/color/48/000000/html-5.png"
+									class="logo-html5" />
+										<h6>HTML5</h6>
+							</li>
+							<li class="skill-lang-list"><img src="https://img.icons8.com/color/48/000000/css3.png"
+									class="logo-css3">
+								<h6>CSS3</h6>
+							</li>
+							<li class="skill-lang-list"><img src="https://img.icons8.com/color/48/000000/javascript.png"
+									class="logo-js">
+								<h6>JavaScript</h6>
+							</li>
+							<li class="skill-lang-list"><img
+									src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"
+									class="logo-cpp" />
+								<h6>C++</h6>
+							</li>
+						</ul>
+					</div>
+					<div class="col-sm-4" data-aos="fade-up" data-aos-duration="1000">
+						<p class="frame">Frameworks</p>
+						<ul class="frame-list">
+							<li class="skill-lang-list"><img src="https://img.icons8.com/officel/16/000000/react.png"
+									class="logo-react">
+								<h6>React</h6>
+							</li>
+							<li class="skill-lang-list"><img src="https://img.icons8.com/color/48/000000/bootstrap.png"
+									class="logo-bstrp">
+								<h6>Bootstrap4</h6>
+							</li>
+						</ul>
+					</div>
+					<div class="col-sm-4" data-aos="fade-up" data-aos-duration="1000">
+						<p class="db">Databases</p>
+						<ul class="frame-list">
+							<li class="skill-lang-list"><img src="https://img.icons8.com/dusk/64/000000/sql.png"
+									class="logo-sql">
+								<h6>SQL</h6>
+							</li>
+							<li class="skill-lang-list"><img src="img/sqlite-icon.png" class="logo-sqlite">
+								<h6>SQLite</h6>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
 
 
-</section>
+	<section class="s1">
+		<div class="main-container project-container">
+			<div id="projects">
+				<ul class="projects-block">
+					<li>
+						<ion-icon name="folder-outline" class="portfolio-icon"></ion-icon>
+					</li>
+					<li>
+						<div class="about-label">Projects</div>
+					</li>
+				</ul>
+			</div>
+
+
+			<div class="cta filter">
+				<ul class="project-category">
+					<li><a class="all active" data-filter="all" href="#" role="button">ALL</a></li>
+					<li><a class="design" data-filter="design" href="#" role="button">DESIGN</a></li>
+					<li><a class="personal" data-filter="personal" href="#" role="button">PERSONAL</a></li>
+					<li><a class="misc" data-filter="misc" href="#" role="button">MISC</a></li>
+				</ul>
+			</div>
+
+
+			<div class="boxes">
+				<a class="design" data-category="design" href="#">
+					
+						<div class="post-wrapper" data-aos="flip-up">
+							<div class="post">
+								<img class="thumbnail" src="img/post-1.jpg" alt="">
+							</div>
+						</div>
+					
+				</a>
+				<a class="personal" data-category="personal" href="#">
+					<div class="post-wrapper" data-aos="flip-up">
+						<div class="post">
+							<img class="thumbnail" src="img/post-2.jpg" alt="">
+						</div>
+					</div>
+				</a>
+				<a class="misc" data-category="misc" href="#">
+					<div class="post-wrapper" data-aos="flip-up">
+						<div class="post">
+							<img class="thumbnail" src="img/xavier.jpg" alt="">
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+
+		</section>
+
+
+
+		<section class="s2">
+			<div class="main-container footer-container">
+				<div class="footer">
+					<div class="left-foot">
+						<div id="skills">
+							<ul class="skills-block">
+								<li>
+									<ion-icon name="person-circle-outline" class="contact-icon"></ion-icon>
+								</li>
+								<li>
+									<div class="about-label">CONTACT</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="right-foot">
+						<div class="foot-wrapper">
+							<ul>
+								<li>Resume <br><img src="https://img.icons8.com/dotty/80/000000/file.png" class="logo-resume"></li>
+								<li>Email<br><a href="mailto:fahasharapov@gmail.com"><img src="https://img.icons8.com/wired/64/000000/filled-message.png" class="logo-email"></a></li>
+								<li>Network<br><a href="https://github.com/fahasharapov" target="_blank"><img src="https://img.icons8.com/ios/50/000000/github.png" class="logo-network"></a><a href="https://linkedin.com/in/fahasharapov" target="_blank"><img src="https://img.icons8.com/wired/64/000000/linkedin.png" target="_blank" class="logo-network"></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
 
 
 
 </body>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+	integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+	crossorigin="anonymous"></script>
 
 <script>
 	AOS.init({
@@ -179,40 +258,40 @@
 
 <!-- Script For Filtering Projects -->
 <script>
-	(function($) {
+		(function ($) {
 
-  'use strict';
+			'use strict';
 
-  var $filters = $('.filter [data-filter]'),
-    $boxes = $('.boxes [data-category]');
+			var $filters = $('.filter [data-filter]'),
+				$boxes = $('.boxes [data-category]');
 
-  $filters.on('click', function(e) {
-    e.preventDefault();
-    var $this = $(this);
-    
-    $filters.removeClass('active');
-    $this.addClass('active');
+			$filters.on('click', function (e) {
+				e.preventDefault();
+				var $this = $(this);
 
-    var $filterColor = $this.attr('data-filter');
+				$filters.removeClass('active');
+				$this.addClass('active');
 
-    if ($filterColor == 'all') {
-      $boxes.removeClass('is-animated')
-        .fadeOut().finish().promise().done(function() {
-          $boxes.each(function(i) {
-            $(this).addClass('is-animated').delay((i++) * 200).fadeIn();
-          });
-        });
-    } else {
-      $boxes.removeClass('is-animated')
-        .fadeOut().finish().promise().done(function() {
-          $boxes.filter('[data-category = "' + $filterColor + '"]').each(function(i) {
-            $(this).addClass('is-animated').delay((i++) * 200).fadeIn();
-          });
-        });
-    }
-  });
+				var $filterColor = $this.attr('data-filter');
 
-})(jQuery);
+				if ($filterColor == 'all') {
+					$boxes.removeClass('is-animated')
+						.fadeOut().finish().promise().done(function () {
+							$boxes.each(function (i) {
+								$(this).addClass('is-animated').delay((i++) * 200).fadeIn();
+							});
+						});
+				} else {
+					$boxes.removeClass('is-animated')
+						.fadeOut().finish().promise().done(function () {
+							$boxes.filter('[data-category = "' + $filterColor + '"]').each(function (i) {
+								$(this).addClass('is-animated').delay((i++) * 200).fadeIn();
+							});
+						});
+				}
+			});
+
+		})(jQuery);
 </script>
 
 
